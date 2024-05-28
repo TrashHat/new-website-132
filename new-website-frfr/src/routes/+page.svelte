@@ -13,3 +13,10 @@
 		</ul>
 	</div>
 </div> -->
+
+<script>
+	import dataset from '$lib/images/dataset.png';
+	import guidetodata from '$lib/images/guidetodata.png';
+</script>
+
+<!-- <img alt="The Dataset" src={dataset} /> -->
