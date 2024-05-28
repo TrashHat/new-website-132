@@ -17,11 +17,22 @@ const config = {
 	// 	// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 	// 	adapter: adapter()
 	// }
+	// kit: {
+	// 	adapter: adapter(),
+	// 	paths: {
+	// 		base: process.env.NODE_ENV === 'production' ? '/new-website-132' : ''
+	// 	}
+	// }
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/new-website-132' : ''
-		}
+		adapter: adapter({
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		})
 	}
 };
 
